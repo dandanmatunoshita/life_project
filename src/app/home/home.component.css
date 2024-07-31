@@ -5,7 +5,10 @@
   color: white; /* Cor dos textos na sidenav */
   height: 100%; /* Altura para ocupar toda a tela */
 }
-
+button{
+  background-color: transparent;
+  border: none;
+}
 /* Estilizar itens da lista */
 .mat-list-item {
   color: white; /* Cor dos textos na sidenav */
