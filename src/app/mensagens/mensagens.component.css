@@ -1,0 +1,22 @@
+.mensagens-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .mensagens-list {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #fff; /* Ou qualquer cor de fundo desejada */
+  }
+  
+  .mensagem-input {
+    padding: 16px;
+    background-color: #f5f5f5;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  

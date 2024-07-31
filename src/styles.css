@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* Define a fonte Montserrat para todo o corpo do documento */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+  }
+  
+  /* Garantir que todos os textos estejam brancos */
+  p, h1, h2, h3, h4, h5, h6, a, span, div {
+    color: white; /* Cor branca para todos os textos */
+  }
+  
+  /* Outros estilos globais, se necessário */
+  

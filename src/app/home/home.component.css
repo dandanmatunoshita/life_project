@@ -1,0 +1,81 @@
+/* Estilizar a Sidenav */
+.sidenav {
+  width: 250px; /* Largura da sidenav */
+  background-color: #F07619; /* Cor de fundo laranja */
+  color: white; /* Cor dos textos na sidenav */
+  height: 100%; /* Altura para ocupar toda a tela */
+}
+
+/* Estilizar itens da lista */
+.mat-list-item {
+  color: white; /* Cor dos textos na sidenav */
+}
+
+/* Estilizar o item de logout */
+.logout-item {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilizar o conteúdo */
+.mat-sidenav-content {
+  background-color: #2C2C2C; /* Cor de fundo da área de conteúdo */
+  color: white; /* Cor dos textos na área de conteúdo */
+}
+
+/* Estilizar a barra de ferramentas */
+.toolbar {
+  background-color: #F07619; /* Cor de fundo da barra de ferramentas */
+  color: white;
+}
+
+/* Estilizar o título da barra de ferramentas */
+.toolbar-title {
+  flex: 1;
+  text-align: center;
+  font-weight: bold; /* Deixa o texto mais forte */
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilizar o conteúdo da página */
+.page-content {
+  padding: 16px;
+  margin-top: 64px; /* Evitar sobreposição com a toolbar */
+}
+
+/* Garantir que a sidenav ocupe a altura total e o conteúdo ocupe o restante */
+.sidenav-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-sidenav {
+  flex: 1;
+}
+
+.mat-sidenav-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilizar o conteúdo da página */
+.page-content {
+  padding: 16 px;
+  margin-top: 64px; /* Evitar sobreposição com a toolbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px); /* Altura da página, excluindo a toolbar */
+}
+
+/* Estilizar a imagem centralizada */
+.central-image {
+  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
