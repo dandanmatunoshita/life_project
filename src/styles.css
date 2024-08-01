@@ -13,4 +13,61 @@ body {
   }
   
   /* Outros estilos globais, se necessário */
-  
+  /* Certifique-se de que o mat-sidenav-container ocupe toda a altura da tela */
+.sidenav-container {
+  height: 100vh; /* 100% da altura da viewport */
+}
+
+.mat-sidenav {
+  width: 250px;
+  background-color: #F07619; /* Cor de fundo laranja */
+  color: white; /* Cor dos textos na sidenav */
+}
+
+.mat-sidenav-content {
+  background-color: #2C2C2C; /* Cor de fundo da área de conteúdo */
+  color: white; /* Cor dos textos na área de conteúdo */
+}
+
+.toolbar {
+  background-color: #F07619; /* Cor de fundo da barra de ferramentas */
+  color: white;
+}
+
+.toolbar-title {
+  flex: 1;
+  text-align: center;
+}
+
+/* Estilizar a imagem da FAQ */
+.faq-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilizar os botões da FAQ */
+.faq-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-button {
+  background-color: #F07619; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto dos botões */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq-button:hover {
+  background-color: #D06516; /* Cor do botão ao passar o mouse */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

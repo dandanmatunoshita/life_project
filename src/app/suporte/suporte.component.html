@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened="false" class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
+      <a mat-list-item routerLink="/mensagens" (click)="sidenav.close()">Mensagens</a>
+      <a mat-list-item routerLink="/contatos" (click)="sidenav.close()">Contatos</a>
+      <a mat-list-item routerLink="/dashboard" (click)="sidenav.close()">Dashboard</a>
+      <a mat-list-item routerLink="/ia" (click)="sidenav.close()">I.A.</a>
+      <a mat-list-item routerLink="/faq" (click)="sidenav.close()">FAQ</a>
+      <a mat-list-item routerLink="/universidade" (click)="sidenav.close()">Universidade</a>
+      <a mat-list-item routerLink="/perfil" (click)="sidenav.close()">Perfil</a>
+      <a mat-list-item class="logout-item">Sair da conta</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="toolbar-icon">menu</mat-icon>
+      </button>
+      <span class="toolbar-title">Suporte</span>
+    </mat-toolbar>
+    
+    <!-- Conteúdo da página -->
+    <div class="content">
+      <div class="messages">
+        <div class="message" *ngFor="let msg of messages">
+          <div class="message-content">{{ msg }}</div>
+        </div>
+      </div>
+      
+      <div class="message-form">
+        <textarea matInput [(ngModel)]="message" placeholder="Digite sua mensagem..." rows="3"></textarea>
+        <div class="form-actions">
+          <button mat-raised-button color="primary" (click)="sendMessage()">Enviar</button>
+          <button mat-raised-button color="warn" (click)="deleteMessage()">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

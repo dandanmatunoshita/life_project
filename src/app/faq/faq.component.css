@@ -1,0 +1,69 @@
+/* Estilizar a Sidenav */
+.sidenav {
+    width: 250px;
+    background-color: #F07619; /* Cor de fundo laranja */
+    color: white; /* Cor dos textos na sidenav */
+    height: 100%; /* Certificar que ocupa 100% da altura do container */
+  }
+  
+  /* Estilizar itens da lista */
+  .mat-list-item {
+    color: white; /* Cor dos textos na sidenav */
+  }
+  
+  /* Estilizar o item de logout */
+  .logout-item {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilizar o conteúdo */
+  .mat-sidenav-content {
+    background-color: #2C2C2C; /* Cor de fundo da área de conteúdo */
+    color: white; /* Cor dos textos na área de conteúdo */
+    height: 100%; /* Certificar que ocupa 100% da altura do container */
+  }
+  
+  /* Estilizar a barra de ferramentas */
+  .toolbar {
+    background-color: #F07619; /* Cor de fundo da barra de ferramentas */
+    color: white;
+  }
+  
+  /* Estilizar o título da barra de ferramentas */
+  .toolbar-title {
+    flex: 1;
+    text-align: center;
+    font-weight: bold; /* Texto mais forte */
+  }
+  
+  /* Estilizar o conteúdo da página */
+  .content {
+    padding: 16px;
+    text-align: center; /* Centralizar o conteúdo */
+  }
+  
+  /* Estilizar a imagem principal */
+  .faq-image {
+    max-width: 100%; /* Limitar a largura da imagem ao tamanho do container */
+    height: auto; /* Manter a proporção da imagem */
+    display: block; /* Garantir que a imagem não seja exibida como inline */
+    margin: 0 auto; /* Centralizar horizontalmente */
+  }
+  
+  /* Estilizar as imagens de link */
+  .image-links {
+    margin-top: 16px; /* Espaço acima dos links das imagens */
+  }
+  
+  .link-image {
+    max-width: 100%; /* Limitar a largura da imagem ao tamanho do container */
+    height: auto; /* Manter a proporção da imagem */
+    display: block; /* Garantir que a imagem não seja exibida como inline */
+    margin: 8px auto; /* Espaço entre as imagens e centralização horizontal */
+  }
+  

@@ -1,1 +1,45 @@
-<p>universidade works!</p>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="false" class="sidenav">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
+        <a mat-list-item routerLink="/mensagens" (click)="sidenav.close()">Mensagens</a>
+        <a mat-list-item routerLink="/contatos" (click)="sidenav.close()">Contatos</a>
+        <a mat-list-item routerLink="/dashboard" (click)="sidenav.close()">Dashboard</a>
+        <a mat-list-item routerLink="/ia" (click)="sidenav.close()">I.A.</a>
+        <a mat-list-item routerLink="/faq" (click)="sidenav.close()">FAQ</a>
+        <a mat-list-item routerLink="/universidade" (click)="sidenav.close()">Universidade</a>
+        <a mat-list-item routerLink="/perfil" (click)="sidenav.close()">Perfil</a>
+        <a mat-list-item class="logout-item">Sair da conta</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="toolbar">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="toolbar-title">Universidade</span>
+      </mat-toolbar>
+      <!-- Conteúdo da página -->
+      <div class="content">
+        <div class="video-container">
+          <div class="video-item">
+            <div class="video-title">Como conectar suas Redes Sociais</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+            <div class="video-title">Como usar a dashboard</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+            <div class="video-title">Conexão com a I.A.</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+            <div class="video-title">Adicionando sua equipe</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
