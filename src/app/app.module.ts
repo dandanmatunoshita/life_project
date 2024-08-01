@@ -1,9 +1,8 @@
-// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';  // Importando o módulo de roteamento
+import { AppRoutingModule } from './app-routing.module';
 
 // Angular Material modules
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -13,8 +12,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatCardModule } from '@angular/material/card';  // Importando o módulo mat-card
-import { MatDialogModule } from '@angular/material/dialog'; // Importando o módulo mat-dialog
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog'; // Importando MatDialogModule
 
 // Components
 import { AppComponent } from './app.component';
@@ -25,7 +24,7 @@ import { FaqComponent } from './faq/faq.component';
 import { UniversidadeComponent } from './universidade/universidade.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login.component';
-import { ErrorDialogComponent } from './error-dialog/error-dialog.component';  // Importando o ErrorDialogComponent
+import { ErrorDialogComponent } from './error-dialog/error-dialog.component'; // Importando ErrorDialogComponent
 
 @NgModule({
   declarations: [
@@ -37,13 +36,13 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';  /
     UniversidadeComponent,
     PerfilComponent,
     LoginComponent,
-    ErrorDialogComponent // Declarando o ErrorDialogComponent aqui
+    ErrorDialogComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppRoutingModule,      // Adicionando o módulo de roteamento
+    AppRoutingModule,
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
@@ -51,10 +50,11 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';  /
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule,  // Adicionando o módulo mat-card
-    MatDialogModule // Adicionando o módulo mat-dialog
+    MatCardModule,
+    MatDialogModule // Adicionando MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // Remover a propriedade entryComponents
 })
 export class AppModule { }

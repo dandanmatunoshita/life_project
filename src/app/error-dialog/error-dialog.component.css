@@ -27,3 +27,11 @@
     background-color: #e0e0e0; /* Cor de fundo do botão ao passar o mouse */
   }
   
+  /* Estilização para o modal de erro */
+mat-dialog-content {
+    color: #000;
+  }
+  mat-dialog-actions {
+    text-align: right;
+  }
+  
