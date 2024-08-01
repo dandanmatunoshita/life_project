@@ -1,0 +1,81 @@
+/* src/app/login/login.component.css */
+:host {
+  display: block;
+  height: 100vh;
+  background-color: #121212; /* Fundo escuro */
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background-color: #ffffff; /* Barra superior branca */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo-image {
+  height: 40px; /* Ajuste a altura da imagem conforme necessário */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.login-card {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #F07619; /* Cor do fundo do card */
+  color: #ffffff; /* Texto branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra do card */
+  border-radius: 8px; /* Bordas arredondadas do card */
+}
+
+.mat-card-header {
+  background-color: #F07619; /* Cor da barra do card */
+  color: #ffffff; /* Texto branco */
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field .mat-form-field-flex {
+  background-color: transparent; /* Remove o fundo branco do campo */
+}
+
+.mat-form-field label {
+  color: #ffffff; /* Cor do label para contraste com fundo escuro */
+}
+
+.mat-form-field .mat-input-element {
+  color: #ffffff; /* Cor do texto no campo para contraste com fundo escuro */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #ffffff; /* Cor de fundo dos botões */
+  color: #000000; /* Cor do texto dos botões */
+}
+
+button.mat-raised-button {
+  background-color: #ffffff; /* Cor de fundo dos botões */
+  color: #000000; /* Cor do texto dos botões */
+}
+
+button.mat-raised-button:hover {
+  background-color: #e0e0e0; /* Cor de fundo do botão ao passar o mouse */
+}

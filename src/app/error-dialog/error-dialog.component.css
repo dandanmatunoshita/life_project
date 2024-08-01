@@ -1,0 +1,29 @@
+/* src/app/error-dialog/error-dialog.component.css */
+.error-dialog-card {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #F07619; /* Cor do fundo do card */
+    color: #ffffff; /* Texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra do card */
+    border-radius: 8px; /* Bordas arredondadas do card */
+  }
+  
+  .error-dialog-card mat-card-header {
+    background-color: #F07619; /* Cor da barra do card */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  .error-dialog-card p {
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  button {
+    background-color: #ffffff; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+  }
+  
+  button.mat-raised-button:hover {
+    background-color: #e0e0e0; /* Cor de fundo do botão ao passar o mouse */
+  }
+  

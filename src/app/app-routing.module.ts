@@ -1,21 +1,13 @@
-// src/app/app-routing.module.ts
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';  // Ajuste os caminhos conforme necessário
-import { SuporteComponent } from './suporte/suporte.component';
-import { IaComponent } from './ia/ia.component';
-import { FaqComponent } from './faq/faq.component';
-import { UniversidadeComponent } from './universidade/universidade.component';
-import { PerfilComponent } from './perfil/perfil.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component'; // Se já tiver um componente Home
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'suporte', component: SuporteComponent },
-  { path: 'ia', component: IaComponent },
-  { path: 'faq', component: FaqComponent },
-  { path: 'universidade', component: UniversidadeComponent },
-  { path: 'perfil', component: PerfilComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent }, // Exemplo de outra rota
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' } // Redireciona qualquer caminho não reconhecido para a página de login
 ];
 
 @NgModule({

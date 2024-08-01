@@ -13,6 +13,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';  // Importando o módulo mat-card
+import { MatDialogModule } from '@angular/material/dialog'; // Importando o módulo mat-dialog
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,6 +24,8 @@ import { IaComponent } from './ia/ia.component';
 import { FaqComponent } from './faq/faq.component';
 import { UniversidadeComponent } from './universidade/universidade.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { LoginComponent } from './login/login.component';
+import { ErrorDialogComponent } from './error-dialog/error-dialog.component';  // Importando o ErrorDialogComponent
 
 @NgModule({
   declarations: [
@@ -31,20 +35,24 @@ import { PerfilComponent } from './perfil/perfil.component';
     IaComponent,
     FaqComponent,
     UniversidadeComponent,
-    PerfilComponent
+    PerfilComponent,
+    LoginComponent,
+    ErrorDialogComponent // Declarando o ErrorDialogComponent aqui
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppRoutingModule,      // Adicione o módulo de roteamento aqui
+    AppRoutingModule,      // Adicionando o módulo de roteamento
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,  // Adicionando o módulo mat-card
+    MatDialogModule // Adicionando o módulo mat-dialog
   ],
   providers: [],
   bootstrap: [AppComponent]
