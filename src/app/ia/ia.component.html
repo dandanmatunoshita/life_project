@@ -1,1 +1,41 @@
-<p>ia works!</p>
+<!-- src/app/ia/ia.component.html -->
+<mat-toolbar class="top-bar">
+  <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  <span class="toolbar-title">IA</span>
+</mat-toolbar>
+
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #sidenav mode="side" opened="false" class="sidenav">
+          <mat-nav-list>
+            <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
+            <a mat-list-item routerLink="/mensagens" (click)="sidenav.close()">Mensagens</a>
+            <a mat-list-item routerLink="/contatos" (click)="sidenav.close()">Contatos</a>
+            <a mat-list-item routerLink="/dashboard" (click)="sidenav.close()">Dashboard</a>
+            <a mat-list-item routerLink="/ia" (click)="sidenav.close()">I.A.</a>
+            <a mat-list-item routerLink="/faq" (click)="sidenav.close()">FAQ</a>
+            <a mat-list-item routerLink="/universidade" (click)="sidenav.close()">Universidade</a>
+            <a mat-list-item routerLink="/perfil" (click)="sidenav.close()">Perfil</a>
+            <a mat-list-item class="logout-item">Sair da conta</a>
+          </mat-nav-list>
+        </mat-sidenav>
+        
+  <mat-sidenav-content>
+    <div class="content">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Chatbot</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <mat-label>Digite sua mensagem</mat-label>
+            <input matInput [(ngModel)]="userMessage" placeholder="Mensagem">
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="sendMessage()">Enviar</button>
+          <div class="response-area">
+            <p>{{ responseMessage }}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

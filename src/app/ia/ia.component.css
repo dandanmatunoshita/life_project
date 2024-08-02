@@ -1,0 +1,58 @@
+/* src/app/ia/ia.component.css */
+.sidenav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  mat-sidenav {
+    width: 200px;
+    background: #F07619; /* Cor da sidenav */
+  }
+  
+  mat-toolbar.top-bar {
+    background: #15A17F; /* Cor de fundo da barra superior */
+    color: #FFFFFF; /* Cor do texto da barra superior */
+  }
+  
+  .toolbar-title {
+    margin-left: 16px;
+  }
+  
+  mat-icon {
+    color: #FFFFFF; /* Cor do ícone de menu */
+  }
+  
+  .content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .response-area {
+    margin-bottom: 16px;
+    width: 80%; /* Alinha o espaço do texto do chatbot mais ao centro */
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-card {
+    background: #1a1a1a; /* Cor de fundo do card mais próxima do preto */
+    color: #FFFFFF; /* Cor do texto do card */
+  }
+  
+  button {
+    color: #000000; /* Cor do texto dos botões */
+  }
+  
+  button:hover {
+    background-color: #e0e0e0; /* Cor de fundo do botão ao passar o mouse */
+  }
+  

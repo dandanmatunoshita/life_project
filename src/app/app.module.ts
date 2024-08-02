@@ -1,3 +1,4 @@
+// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
-import { MatDialogModule } from '@angular/material/dialog'; // Importando MatDialogModule
+import { MatDialogModule } from '@angular/material/dialog';
 
 // Components
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { FaqComponent } from './faq/faq.component';
 import { UniversidadeComponent } from './universidade/universidade.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login.component';
-import { ErrorDialogComponent } from './error-dialog/error-dialog.component'; // Importando ErrorDialogComponent
+import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,10 +53,11 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component'; //
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatDialogModule // Adicionando MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    MatSidenavModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  // Remover a propriedade entryComponents
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
