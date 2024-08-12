@@ -6,12 +6,14 @@ import { UniversidadeComponent } from './universidade/universidade.component';
 import { FaqComponent } from './faq/faq.component';
 import { SuporteComponent } from './suporte/suporte.component';
 import { IaComponent } from './ia/ia.component';
+import { ContatosComponent } from './contatos/contatos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'suporte', component: SuporteComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'ia', component: IaComponent },
+  { path: 'contatos', component: ContatosComponent },
   { path: 'universidade', component: UniversidadeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },

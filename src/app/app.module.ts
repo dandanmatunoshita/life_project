@@ -15,9 +15,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select'; // Importar MatSelectModule
+import { MatOptionModule } from '@angular/material/core';   // Importar MatOptionModule
 
 // Components
 import { AppComponent } from './app.component';
+import { ContatosComponent } from './contatos/contatos.component';
 import { HomeComponent } from './home/home.component';
 import { SuporteComponent } from './suporte/suporte.component';
 import { IaComponent } from './ia/ia.component';
@@ -38,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     UniversidadeComponent,
     PerfilComponent,
     LoginComponent,
+    ContatosComponent,
     ErrorDialogComponent
   ],
   imports: [
@@ -54,8 +58,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatCardModule,
     MatDialogModule,
-    HttpClientModule,
-    MatSidenavModule
+    MatSelectModule,  // Adicione aqui
+    MatOptionModule,  // Adicione aqui
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
