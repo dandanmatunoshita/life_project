@@ -15,8 +15,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatSelectModule } from '@angular/material/select'; // Importar MatSelectModule
-import { MatOptionModule } from '@angular/material/core';   // Importar MatOptionModule
 
 // Components
 import { AppComponent } from './app.component';
@@ -58,8 +56,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatCardModule,
     MatDialogModule,
-    MatSelectModule,  // Adicione aqui
-    MatOptionModule,  // Adicione aqui
     HttpClientModule
   ],
   providers: [],
