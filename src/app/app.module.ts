@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
+
 // Angular Material modules
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,7 +30,9 @@ import { LoginComponent } from './login/login.component';
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
+
   declarations: [
     AppComponent,
     HomeComponent,
@@ -41,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     ContatosComponent,
     ErrorDialogComponent
+    
   ],
   imports: [
     BrowserModule,
