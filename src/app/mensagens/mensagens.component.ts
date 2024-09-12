@@ -3,9 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-mensagens',
   templateUrl: './mensagens.component.html',
-  styleUrls: ['./mensagens.component.scss']
+  styleUrls: ['./mensagens.component.css']
 })
 export class MensagensComponent {
+selectedFilter: any;
+onFilterChange(arg0: any) {
+throw new Error('Method not implemented.');
+}
   messages: { text: string, type: 'sent' | 'received' }[] = [];
   messageText: string = '';
 

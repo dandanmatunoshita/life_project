@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-
 
 // Angular Material modules
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';  // <-- Adicione esta linha
 
 // Components
 import { AppComponent } from './app.component';
@@ -28,11 +29,9 @@ import { UniversidadeComponent } from './universidade/universidade.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { MensagensComponent } from './mensagens/mensagens.component'; 
 
 @NgModule({
-
   declarations: [
     AppComponent,
     HomeComponent,
@@ -43,14 +42,16 @@ import { HttpClientModule } from '@angular/common/http';
     PerfilComponent,
     LoginComponent,
     ContatosComponent,
-    ErrorDialogComponent
-    
+    ErrorDialogComponent,
+    MensagensComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
+    // Angular Material Modules
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
@@ -60,7 +61,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatCardModule,
     MatDialogModule,
-    HttpClientModule
+    MatSelectModule  // <-- Certifique-se de importar o MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
